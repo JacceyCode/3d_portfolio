@@ -415,7 +415,7 @@ const projects = [
   {
     name: "Apple iPhone 15 Pro",
     description:
-      "Experience the cutting-edge innovation of the Apple iPhone 15 Pro – a masterpiece of design and technology. Featuring a stunning titanium frame, the most advanced A17 Bionic chip for unparalleled performance, and an industry-leading ProMotion display, this iPhone delivers an ultra-smooth user experience.",
+      "Experience the cutting-edge innovation of the Apple iPhone 15 Pro with a stunning titanium frame and the most advanced A17 Bionic chip for unparalleled performance.",
     tags: [
       {
         name: "react",
