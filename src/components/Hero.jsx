@@ -15,7 +15,7 @@ const Hero = () => {
           <div className="size-5 rounded-full bg-[#915eff]" />
           <div className="w-1 sm:h-60 h-36 violet-gradient" />
 
-          <div className="flex flex-col space-y-4 z-20 -mt-10">
+          <div className="flex flex-col space-y-6 z-10 -mt-10">
             <a
               href="https://github.com/JacceyCode"
               target="_blank"
