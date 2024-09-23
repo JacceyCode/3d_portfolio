@@ -29,6 +29,14 @@ import {
   typescript,
   web,
   apple,
+  reactnative,
+  zustand,
+  redis,
+  redux,
+  express,
+  supabase,
+  appwrite,
+  gsap,
 } from "../assets";
 
 export const navLinks = [
@@ -82,10 +90,6 @@ const technologies = [
     name: "TypeScript",
     icon: typescript,
   },
-  // {
-  //   name: "SQL",
-  //   icon: sql,
-  // },
   {
     name: "React JS",
     icon: reactjs,
@@ -94,30 +98,34 @@ const technologies = [
     name: "Next JS",
     icon: nextjs,
   },
-  // {
-  //   name: "React Native",
-  //   icon: reactnative,
-  // },
-  // {
-  //   name: "Redux Toolkit",
-  //   icon: redux,
-  // },
-  // {
-  //   name: "Zustand",
-  //   icon: zustand,
-  // },
+  {
+    name: "React Native",
+    icon: reactnative,
+  },
+  {
+    name: "Redux Toolkit",
+    icon: redux,
+  },
+  {
+    name: "Zustand",
+    icon: zustand,
+  },
   {
     name: "Tailwind CSS",
     icon: tailwind,
   },
   {
+    name: "GSAP",
+    icon: gsap,
+  },
+  {
     name: "Node JS",
     icon: nodejs,
   },
-  // {
-  //   name: "Express JS",
-  //   icon: express,
-  // },
+  {
+    name: "Express JS",
+    icon: express,
+  },
   {
     name: "MongoDB",
     icon: mongodb,
@@ -126,26 +134,18 @@ const technologies = [
     name: "PostgreSQL",
     icon: postgresql,
   },
-  // {
-  //   name: "Supabase",
-  //   icon: supabase,
-  // },
-  // {
-  //   name: "Appwrite",
-  //   icon: appwrite,
-  // },
-  // {
-  //   name: "Redis",
-  //   icon: redis,
-  // },
-  // {
-  //   name: "GSAP",
-  //   icon: gsap,
-  // },
-  // {
-  //   name: "Three JS",
-  //   icon: threejs,
-  // },
+  {
+    name: "Supabase",
+    icon: supabase,
+  },
+  {
+    name: "Appwrite",
+    icon: appwrite,
+  },
+  {
+    name: "Redis",
+    icon: redis,
+  },
   {
     name: "Jest",
     icon: jest,
@@ -154,22 +154,10 @@ const technologies = [
     name: "docker",
     icon: docker,
   },
-  // {
-  //   name: "Github Actions",
-  //   icon: gitactions,
-  // },
   {
     name: "git",
     icon: git,
   },
-  // {
-  //   name: "figma",
-  //   icon: figma,
-  // },
-  // {
-  //   name: "VS Code",
-  //   icon: vscode,
-  // },
 ];
 
 const experiences = [
