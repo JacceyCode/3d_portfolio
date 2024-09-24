@@ -21,6 +21,15 @@ export default {
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
       },
+      animation: {
+        imageScroll: "imageScroll 20s linear infinite",
+      },
+      keyframes: {
+        imageScroll: {
+          "0%, 100%": { transform: "translateX(0)" },
+          "50%": { transform: "translateX(-90%)" },
+        },
+      },
     },
   },
   plugins: [],
