@@ -35,6 +35,7 @@ import reactnative from "./tech/reactnative.png";
 import nextjs from "./tech/nextjs.png";
 import sql from "./tech/sql.png";
 import threejs from "./tech/threejs.svg";
+import aws from "./tech/aws.png";
 
 import qiminvest from "./company/qiminvest.png";
 import eumla from "./company/eumla.png";
@@ -50,6 +51,7 @@ import oasismgt from "./oasis-mgt.jpeg";
 import moviebox from "./moviebox.webp";
 import pizza from "./pizza.webp";
 import apple from "./apple.png";
+import jafel from "./jafel.png";
 
 export {
   logo,
@@ -101,4 +103,6 @@ export {
   qiminvest,
   eumla,
   apple,
+  jafel,
+  aws,
 };

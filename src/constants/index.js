@@ -37,6 +37,8 @@ import {
   supabase,
   appwrite,
   gsap,
+  jafel,
+  aws,
 } from "../assets";
 
 export const navLinks = [
@@ -151,12 +153,16 @@ const technologies = [
     icon: jest,
   },
   {
-    name: "docker",
+    name: "Docker",
     icon: docker,
   },
   {
-    name: "git",
+    name: "Git",
     icon: git,
+  },
+  {
+    name: "AWS",
+    icon: aws,
   },
 ];
 
@@ -231,6 +237,90 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "Jafel Project",
+    description:
+      "A Project Management app designed for creating, scheduling, assigning, tracking, and reporting tasks and projects. It helps to ensure project completion within budget and on time by providing tools for planning, resource allocation, and progress monitoring.",
+    tags: [
+      {
+        name: "Next.js",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "green-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "redux-toolkit",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "recharts",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "react-dnd",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "node.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "express",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "postgresql",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "prisma",
+        color: "green-text-gradient",
+      },
+      {
+        name: "aws",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: jafel,
+    source_code_link: "https://github.com/JacceyCode/jira_app",
+    live_demo: "https://main.d2mefg2mgkp7t4.amplifyapp.com",
+  },
+  {
+    name: "Apple iPhone 15 Pro",
+    description:
+      "Experience the cutting-edge innovation of the Apple iPhone 15 Pro with a stunning titanium frame and the most advanced A17 Bionic chip for unparalleled performance.",
+    tags: [
+      {
+        name: "react",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "green-text-gradient",
+      },
+      {
+        name: "gsap",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "react_three_fiber",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "sentry",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: apple,
+    source_code_link: "https://github.com/JacceyCode/apple",
+    live_demo: "https://apple-motion-page.vercel.app",
+  },
   {
     name: "CarePlus+",
     description:
@@ -399,36 +489,6 @@ const projects = [
     source_code_link:
       "https://github.com/JacceyCode/the-wild-aosis-client-website",
     live_demo: "https://the-wild-aosis-client-website.vercel.app",
-  },
-  {
-    name: "Apple iPhone 15 Pro",
-    description:
-      "Experience the cutting-edge innovation of the Apple iPhone 15 Pro with a stunning titanium frame and the most advanced A17 Bionic chip for unparalleled performance.",
-    tags: [
-      {
-        name: "react",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "tailwindcss",
-        color: "green-text-gradient",
-      },
-      {
-        name: "gsap",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "react_three_fiber",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "sentry",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: apple,
-    source_code_link: "https://github.com/JacceyCode/apple",
-    live_demo: "https://apple-motion-page.vercel.app",
   },
   {
     name: "E-Blog App",
