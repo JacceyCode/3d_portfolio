@@ -40,7 +40,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        A software developer 👩‍💻 with 3+ years of experience in development and
+        A software developer👩‍💻 with 3+ years of experience in development and
         deployment of robust web🌐 and mobile📱 applications that solves
         real-world problems. Proficient in HTML5, CSS3, JavaScript, TypeScript,
         and SQL, and skilled in frameworks such as React, Next.js, and Node.js.

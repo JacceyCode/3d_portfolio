@@ -24,18 +24,24 @@ const Contact = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
+    const { name, email, message } = form;
     setLoading(true);
+    if (!name || !email || !message) {
+      alert("Please fill in all details so I can reach back to you. Thanks.");
+      setLoading(false);
+      return;
+    }
 
     emailjs
       .send(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
-          from_name: form.name,
+          from_name: name,
           to_name: "Jacob",
-          from_email: form.email,
+          from_email: email,
           to_email: "jacobadebayo.ja@gmail.com",
-          message: form.message,
+          message: message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
@@ -53,9 +59,9 @@ const Contact = () => {
         (error) => {
           setLoading(false);
 
-          console.log(error);
+          console.error(error.message);
 
-          alert("Sorry, Something went wrong.");
+          alert("Sorry, Something went wrong. Please try again.");
         }
       );
   };
@@ -104,13 +110,15 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder="What do you want to say?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium resize-none"
             />
           </label>
 
           <button
             type="submit"
-            className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+            className={`bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl ${
+              loading ? "cursor-not-allowed" : ""
+            }`}
           >
             {loading ? "Sending..." : "Send"}
           </button>
