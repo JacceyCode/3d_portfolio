@@ -39,6 +39,7 @@ import {
   gsap,
   jafel,
   aws,
+  traderapp,
 } from "../assets";
 
 export const navLinks = [
@@ -62,7 +63,7 @@ const services = [
     icon: creator,
   },
   {
-    title: "React Native Developer",
+    title: "Mobile App Developer",
     icon: mobile,
   },
   {
@@ -167,30 +168,29 @@ const technologies = [
 ];
 
 const experiences = [
-  // {
-  //   title: "FullStack Developer",
-  //   company_name: "TraderApp - Remote",
-  //   icon: meta,
-  //   iconBg: "#383E56",
-  //   date: "July 2024 - Present",
-  //   points: [
-  //     "Developing and maintaining web applications using React.js and other related technologies.",
-  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-  //     "Implementing responsive design and ensuring cross-browser compatibility.",
-  //     "Participating in code reviews and providing constructive feedback to other developers.",
-  //   ],
-  // },
+  {
+    title: "FullStack Engineer",
+    company_name: "TraderApp - Remote",
+    icon: traderapp,
+    iconBg: "#000080",
+    date: "March 2024 - Present",
+    points: [
+      "Developed a real-time asset price streaming feature for the user dashboard using Web Sockets, Redis and the Binance API, improving trade execution and monitoring speed.",
+      "Designed a trade signals tracking system to accurately calculate and reward users for earned profits, increasing transaction accuracy by 41%.",
+      "Boosted new registrations by 33% and increased active users by 74% by implementing a gamified task and reward system.",
+      "Implemented automated unit testing with Jest, reducing deployment bugs by 55% and improving system reliability.",
+    ],
+  },
   {
     title: "FullStack Developer",
     company_name: "Eumla - Remote",
     icon: eumla,
     iconBg: "#383E56",
-    date: "January 2023 - Present",
+    date: "February 2023 - October 2023",
     points: [
-      "Developing and maintaining web applications using Next.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Collaborated with in-house designer and product manager to build a new responsive website and implemented standard SEO practices to enhance company's digital presence.",
+      "Contributed to the Development the company’s mobile application, ensuring a seamless user experience and functionality.",
+      "Regular validation of data integrity and security protocols, reducing system failure by 65%.",
     ],
   },
   {
@@ -198,13 +198,12 @@ const experiences = [
     company_name: "Qim Invest - Remote",
     icon: qiminvest,
     iconBg: "#383E56",
-    date: "June 2022 - Present",
+    date: "June 2022 - March 2024",
     points: [
-      "Collaborated with in-house designer and product manager to build a new responsive website and implemented standard SEO practices to enhance company's digital presence.",
-      "Developed high-performance RESTful APIs handling an average of 5,000 requests per minute, improving data retrieval speed and enhancing overall application responsiveness for end-users.",
-      "Developed the company’s first mobile application, ensuring a seamless user experience and functionality.",
-      "Regular validation of data integrity and security protocols, reducing system failure by 65%.",
-      "Engineered a code review system, improving both code quality and development time by 30%.",
+      "Increased revenue by 7% and traffic by 24% by deploying a new website optimized with search engine optimization (SEO) strategies and meta-tagging.",
+      "Enhanced API performance by 20% by optimizing query efficiency and database structuring in Node.js/Express.",
+      "Strengthened security by implementing JWT-based authentication and cookie-based access control, reducing unauthorized access incidents.",
+      "Reduced system failures by 35% with automated unit testing with Jest, ensuring data integrity.",
     ],
   },
 ];
@@ -237,90 +236,60 @@ const testimonials = [
 ];
 
 const projects = [
-  {
-    name: "Jafel Project",
-    description:
-      "A Project Management app designed for creating, scheduling, assigning, tracking, and reporting tasks and projects. It helps to ensure project completion within budget and on time by providing tools for planning, resource allocation, and progress monitoring.",
-    tags: [
-      {
-        name: "Next.js",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "tailwindcss",
-        color: "green-text-gradient",
-      },
-      {
-        name: "typescript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "redux-toolkit",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "recharts",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "react-dnd",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "node.js",
-        color: "green-text-gradient",
-      },
-      {
-        name: "express",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "postgresql",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "prisma",
-        color: "green-text-gradient",
-      },
-      {
-        name: "aws",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: jafel,
-    source_code_link: "https://github.com/JacceyCode/jira_app",
-    live_demo: "https://main.d2mefg2mgkp7t4.amplifyapp.com",
-  },
-  {
-    name: "Apple iPhone 15 Pro",
-    description:
-      "Experience the cutting-edge innovation of the Apple iPhone 15 Pro with a stunning titanium frame and the most advanced A17 Bionic chip for unparalleled performance.",
-    tags: [
-      {
-        name: "react",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "tailwindcss",
-        color: "green-text-gradient",
-      },
-      {
-        name: "gsap",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "react_three_fiber",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "sentry",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: apple,
-    source_code_link: "https://github.com/JacceyCode/apple",
-    live_demo: "https://apple-motion-page.vercel.app",
-  },
+  // {
+  //   name: "Jafel Project",
+  //   description:
+  //     "A Project Management app designed for creating, scheduling, assigning, tracking, and reporting tasks and projects. It helps to ensure project completion within budget and on time by providing tools for planning, resource allocation, and progress monitoring.",
+  //   tags: [
+  //     {
+  //       name: "Next.js",
+  //       color: "orange-text-gradient",
+  //     },
+  //     {
+  //       name: "tailwindcss",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "typescript",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "redux-toolkit",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "recharts",
+  //       color: "orange-text-gradient",
+  //     },
+  //     {
+  //       name: "react-dnd",
+  //       color: "orange-text-gradient",
+  //     },
+  //     {
+  //       name: "node.js",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "express",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "postgresql",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "prisma",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "aws",
+  //       color: "orange-text-gradient",
+  //     },
+  //   ],
+  //   image: jafel,
+  //   source_code_link: "https://github.com/JacceyCode/jira_app",
+  //   live_demo: "https://main.d2mefg2mgkp7t4.amplifyapp.com",
+  // },
   {
     name: "CarePlus+",
     description:
@@ -406,124 +375,154 @@ const projects = [
     live_demo: "https://bank-on-the-go.vercel.app",
   },
   {
-    name: "SeronEstate App",
+    name: "Apple iPhone 15 Pro",
     description:
-      "An estate management app that allows for sale, purchase or rent of apartments with a chat feature for easy communication among users.",
+      "Experience the cutting-edge innovation of the Apple iPhone 15 Pro with a stunning titanium frame and the most advanced A17 Bionic chip for unparalleled performance.",
     tags: [
       {
         name: "react",
         color: "orange-text-gradient",
-      },
-      {
-        name: "typescript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "zustand",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "sass",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "leaflet map",
-        color: "green-text-gradient",
-      },
-      {
-        name: "cloudinary",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "nodejs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "express",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "prisma",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "jwtoken",
-        color: "green-text-gradient",
-      },
-      {
-        name: "socket-io",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: seron,
-    source_code_link: "https://github.com/JacceyCode/estate-app",
-    live_demo: "https://seron-estate-app.vercel.app",
-  },
-  {
-    name: "Oasis",
-    description:
-      "An app developed for tourist's to book cabin accommodation of their choice before a scheduled visit to the tourist centre.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "nextauth",
-        color: "green-text-gradient",
       },
       {
         name: "tailwindcss",
+        color: "green-text-gradient",
+      },
+      {
+        name: "gsap",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "react_three_fiber",
         color: "pink-text-gradient",
       },
-    ],
-    image: oasisclt,
-    source_code_link:
-      "https://github.com/JacceyCode/the-wild-aosis-client-website",
-    live_demo: "https://the-wild-aosis-client-website.vercel.app",
-  },
-  {
-    name: "E-Blog App",
-    description:
-      "A platform enabling writers to publish creative works for avid readers to engage with and provide valuable feedback.",
-    tags: [
       {
-        name: "react",
+        name: "sentry",
         color: "orange-text-gradient",
       },
-      {
-        name: "nodejs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "express",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "jwtoken",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
     ],
-    image: blog,
-    source_code_link: "https://github.com/JacceyCode/blog-site",
-    live_demo: "https://jacceyblog.netlify.app",
+    image: apple,
+    source_code_link: "https://github.com/JacceyCode/apple",
+    live_demo: "https://apple-motion-page.vercel.app",
   },
+  // {
+  //   name: "SeronEstate App",
+  //   description:
+  //     "An estate management app that allows for sale, purchase or rent of apartments with a chat feature for easy communication among users.",
+  //   tags: [
+  //     {
+  //       name: "react",
+  //       color: "orange-text-gradient",
+  //     },
+  //     {
+  //       name: "typescript",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "zustand",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "sass",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "leaflet map",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "cloudinary",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "nodejs",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "express",
+  //       color: "orange-text-gradient",
+  //     },
+  //     {
+  //       name: "mongodb",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "prisma",
+  //       color: "orange-text-gradient",
+  //     },
+  //     {
+  //       name: "jwtoken",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "socket-io",
+  //       color: "blue-text-gradient",
+  //     },
+  //   ],
+  //   image: seron,
+  //   source_code_link: "https://github.com/JacceyCode/estate-app",
+  //   live_demo: "https://seron-estate-app.vercel.app",
+  // },
+  // {
+  //   name: "Oasis",
+  //   description:
+  //     "An app developed for tourist's to book cabin accommodation of their choice before a scheduled visit to the tourist centre.",
+  //   tags: [
+  //     {
+  //       name: "nextjs",
+  //       color: "orange-text-gradient",
+  //     },
+  //     {
+  //       name: "nextauth",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "tailwindcss",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "supabase",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: oasisclt,
+  //   source_code_link:
+  //     "https://github.com/JacceyCode/the-wild-aosis-client-website",
+  //   live_demo: "https://the-wild-aosis-client-website.vercel.app",
+  // },
+  // {
+  //   name: "E-Blog App",
+  //   description:
+  //     "A platform enabling writers to publish creative works for avid readers to engage with and provide valuable feedback.",
+  //   tags: [
+  //     {
+  //       name: "react",
+  //       color: "orange-text-gradient",
+  //     },
+  //     {
+  //       name: "nodejs",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "express",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "mongodb",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "jwtoken",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "css",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: blog,
+  //   source_code_link: "https://github.com/JacceyCode/blog-site",
+  //   live_demo: "https://jacceyblog.netlify.app",
+  // },
   {
     name: "D-MarketPlace",
     description:
@@ -588,32 +587,32 @@ const projects = [
     source_code_link: "https://github.com/JacceyCode/Natours",
     live_demo: "https://mynatours-3ltq.onrender.com",
   },
-  {
-    name: "Oasis Management App",
-    description:
-      "An app developed for a resort to strategically prioritize customer management and reservations. With a glance on the app's dashboard, every customer's details and preferences can be gotten at the click of a finger.",
-    tags: [
-      {
-        name: "react",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "styled_components",
-        color: "green-text-gradient",
-      },
-      {
-        name: "recharts",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: oasismgt,
-    source_code_link: "https://github.com/JacceyCode/the-wild-oasis",
-    live_demo: "https://the-wild-oasis-vacation-house.netlify.app",
-  },
+  // {
+  //   name: "Oasis Management App",
+  //   description:
+  //     "An app developed for a resort to strategically prioritize customer management and reservations. With a glance on the app's dashboard, every customer's details and preferences can be gotten at the click of a finger.",
+  //   tags: [
+  //     {
+  //       name: "react",
+  //       color: "orange-text-gradient",
+  //     },
+  //     {
+  //       name: "styled_components",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "recharts",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "supabase",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: oasismgt,
+  //   source_code_link: "https://github.com/JacceyCode/the-wild-oasis",
+  //   live_demo: "https://the-wild-oasis-vacation-house.netlify.app",
+  // },
   {
     name: "MovieBox",
     description:
@@ -636,28 +635,28 @@ const projects = [
     source_code_link: "https://github.com/JacceyCode/HNGxStage2Task",
     live_demo: "https://mymoviestreambox.netlify.app",
   },
-  {
-    name: "Pizza Hub",
-    description:
-      "A website built for pizza lover's, providing a seamless ordering, delivery management and payment experience from the comfort of their homes. This helps to increase the pizza order rate per hour and improve the sales number at least by 40% for the company.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "redux",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwindcss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: pizza,
-    source_code_link: "https://github.com/JacceyCode/fast-react-pizza",
-    live_demo: "https://orderfastpizza.netlify.app",
-  },
+  // {
+  //   name: "Pizza Hub",
+  //   description:
+  //     "A website built for pizza lover's, providing a seamless ordering, delivery management and payment experience from the comfort of their homes. This helps to increase the pizza order rate per hour and improve the sales number at least by 40% for the company.",
+  //   tags: [
+  //     {
+  //       name: "react",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "redux",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "tailwindcss",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: pizza,
+  //   source_code_link: "https://github.com/JacceyCode/fast-react-pizza",
+  //   live_demo: "https://orderfastpizza.netlify.app",
+  // },
 ];
 
 export { experiences, projects, services, technologies, testimonials };

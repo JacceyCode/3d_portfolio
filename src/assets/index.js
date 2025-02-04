@@ -39,6 +39,7 @@ import aws from "./tech/aws.png";
 
 import qiminvest from "./company/qiminvest.png";
 import eumla from "./company/eumla.png";
+import traderapp from "./company/traderapp.png";
 
 import careplus from "./care-plus.png";
 import bank from "./bank.png";
@@ -105,4 +106,5 @@ export {
   apple,
   jafel,
   aws,
+  traderapp,
 };

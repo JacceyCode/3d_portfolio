@@ -4,11 +4,11 @@ import { SectionWrapper } from "../hoc";
 
 const Tech = () => {
   return (
-    <section className="w-full h-[12rem] overflow-hidden flex items-center group green-pink-gradient">
-      <section className="flex flex-row justify-center gap-10 animate-imageScroll group-hover:pause-scroll">
+    <section className="w-full h-[30rem] overflow-hidden flex items-center group green-pink-gradient relative before:absolute after:absolute before:bg-primary after:bg-primary before:h-[15rem] after:h-[15rem] before:inset-top after:inset-bottom after:top-[unset] before:rounded-b-[400px] after:rounded-t-[400px] -my-36">
+      <section className="flex flex-row justify-center gap-10 animate-imageScroll hover:pause-scroll">
         {technologies.map((technology) => (
           <Tilt
-            className="w-[6.3rem] h-[150px] cursor-pointer"
+            className="w-[10rem] h-[18rem] cursor-pointer"
             key={technology.name}
           >
             <div className="size-full card-gradient p-[1px] rounded-[10px] shadow-card">
@@ -30,4 +30,4 @@ const Tech = () => {
   );
 };
 
-export default SectionWrapper(Tech, "");
+export default SectionWrapper(Tech, "tech");

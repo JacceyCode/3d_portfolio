@@ -221,7 +221,7 @@
         transform: translateX(0);
       }
       50% {
-        transform: translateX(-80%); /* Adjusted for large screens */
+        transform: translateX(-85%); /* Adjusted for large screens */
       }
     }
   }
@@ -233,7 +233,7 @@
         transform: translateX(0);
       }
       50% {
-        transform: translateX(-65%); /* Adjusted for large screens */
+        transform: translateX(-75%); /* Adjusted for large screens */
       }
     }
   }

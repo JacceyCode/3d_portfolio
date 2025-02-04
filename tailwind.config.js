@@ -4,6 +4,10 @@ export default {
   mode: "jit",
   theme: {
     extend: {
+      inset: {
+        top: "-9rem -3rem 0",
+        bottom: "0 -3rem -9rem",
+      },
       colors: {
         primary: "#050816",
         secondary: "#aaa6c3",
@@ -22,12 +26,12 @@ export default {
         "hero-pattern": "url('/src/assets/herobg.png')",
       },
       animation: {
-        imageScroll: "imageScroll 20s linear infinite",
+        imageScroll: "imageScroll 30s linear infinite",
       },
       keyframes: {
         imageScroll: {
           "0%, 100%": { transform: "translateX(0)" },
-          "50%": { transform: "translateX(-90%)" },
+          "50%": { transform: "translateX(-93%)" },
         },
       },
     },
