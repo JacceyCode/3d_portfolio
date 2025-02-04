@@ -52,9 +52,9 @@ const Hero = () => {
             Hi 👋, I am <span className="text-[#915eff]">Jacob</span>{" "}
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I try to solve challenges using technological jagons?{" "}
-            <br className="" /> Not forgetting that every software built must
-            improves productivity as well as profitability.
+            I try to solve challenges using technological jagons.{" "}
+            <br className="" /> Not forgetting that every software built should
+            improve productivity as well as profitability.
           </p>
         </div>
       </div>
